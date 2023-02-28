@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso: LLenado de Yogurt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+<style>
+    
+.clock {
+  margin: 0px auto;
+  width: 50%;
+  height: 50%;
+  fill: white
+}
+
+.outer-circle,
+.center-circle {
+  fill: DarkSlateGray;
+}
+
+.hours,
+.minutes,
+.seconds {
+  transform-origin: center;
+  stroke-linecap: round;
+}
+
+.hours {
+  stroke: fuchsia;
+  stroke-width: 3px; 
+  transition: transform 1s ease-in-out;
+}
+.minutes {
+  stroke-width: 2px; 
+  stroke: lime;
+  transition: transform 1s ease-in-out;
+}
+.seconds {
+  stroke: white;
+}
+
+.line {
+  stroke-width: 1px;
+  stroke: white;
+  stroke-linecap: round;
+  transform-origin: center;
+}
+     body {
+        width: 100vw;
+        height: 100vh;
+        line-height: 1.6;
+        font-family: 'Lato';
+        background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        -webkit-tap-highlight-color: transparent;
+        overflow-x: hidden;
+        font-size: 20px;
+    }
+
+    .main{
+      height: 100%;
+      background-color: blue;
+    }
+    .container{
+        background-color: blue;
+        width: 80%;
+        height: 100%;
+        
+    }
+    .container-process{
+        background-color: yellow;
+        height: 50%;
+        display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+    }
+    .container-process-action{
+        background-color: red;
+        width: 70%;    
+    }
+    .container-process-clock{
+        background-color: brown;
+        width:40%;
+    }
+    .container-button{
+        background-color: yellow;
+        width: 100%;
+        height: 10%;
+    }
+    .container-maquina-superior{
+        width:100%;
+        height: 60%;
+        background-color: yellowgreen;
+        display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+    }
+    .container-maquina-inferior{
+        width: 100%;
+        height: 40%;
+        background-color: rosybrown;
+        display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+    }
+    .contenedor{
+        width: 5%;
+        height: 100%;
+        background-color: blue;
+        margin-left: 0.5%;
+    }
+    .cinta{
+        width:33%;
+        height: 100%;
+        background-color: beige;
+        border: solid 2.5px black;
+    }
+    .cinta-arriba{
+        width: 100%;
+        height: 50%;
+        background-color: #a1c4fd;
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: flex-end;
+	    align-content: stretch;
+    }
+    .cinta-arriba-principal{
+        width: 100%;
+        height: 50%;
+        background-color: #a1c4fd;
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: flex-end;
+	    align-content: stretch;
+    }
+    .cinta-abajo{
+        width: 100%;
+        height: 50%;
+        background-color: crimson;
+    }
+    .yogurt{
+        width:45%;
+        height:75%;
+        min-width:30%;
+        min-height: 5%;
+        background-color: white;
+    }
+    .desactivado{
+        background-color: transparent;
+    }
+
+
+
+
+
+</style>
+<body>
+    <div class="main">
+
+        <div class="container">
+            <div class="container-process">
+                <div class="container-process-action">
+                    
+                    <div class="container-maquina-superior">
+                        <div class="contenedor"></div>
+                        <div class="contenedor"></div>
+                    </div>
+                    <div class="container-maquina-inferior">
+                        <div class="cinta">
+                            <div class="cinta-arriba">
+                                <marquee id="envase1">
+                                    <div class="desaparecido" id="tipo3"></div>
+                                </marquee>
+                            </div>
+                            <div class="cinta-abajo"></div>
+                        </div>
+                        <div class="cinta">
+                            <div class="cinta-arriba-principal">
+                                <div class="container-tuberias">
+
+                                </div>
+
+                                <div class="desaparecido" id="tipo2"></div>
+                                </div>
+                            <div class="cinta-abajo"></div>
+                        </div>
+                        <div class="cinta">
+                            <div class="cinta-arriba">
+                                <marquee>
+                                    <div class="desaparecido" id="tipo1"></div>
+                                </marquee>
+                            </div>
+                            <div class="cinta-abajo"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+
+                <div class="container-process-clock">
+                    <div class="clock">
+                        <svg class="circle" viewBox="0 0 120 120" version="1.1"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="60" cy="60" r="60" class="outer-circle"/>
+                        <circle cx="60" cy="60" r="57" />
+                        <line x1="10" y1="60" x2="60" y2="60" class="hours" />
+                        <line x1="60" y1="25" x2="60" y2="60" class="hours" />
+                        </svg>
+                      </div>
+                </div>
+            </div>
+            <div class="container-button">
+                <button id="boton">Start</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="planta.js"></script>
+</html>
