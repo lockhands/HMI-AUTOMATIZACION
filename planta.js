@@ -57,7 +57,7 @@ boton.addEventListener('click', (event) => {
     setTimeout(function(){
         spinner.innerText="5g";
         spinner.className="spinner-2";
-        spinnerproceso.inerText="5g";
+        spinnerproceso.innerText="5g";
         spinnerproceso.className="spinner-2";
         fasemelao.className="fase-0";
         
