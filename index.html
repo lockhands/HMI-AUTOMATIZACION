@@ -56,7 +56,7 @@
         height: 100vh;
         line-height: 1.6;
         font-family: 'Lato';
-        background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        background-color: #0e0f11;
         -webkit-tap-highlight-color: transparent;
         overflow-x: hidden;
         font-size: 20px;
@@ -64,41 +64,53 @@
 
     .main{
       height: 100%;
-      background-color: blue;
+      background-color: #0e0f11
     }
     .container{
-        background-color: blue;
-        width: 80%;
+       
+        background-color:  #0e0f11 ;
+      
         height: 100%;
-        
+        width: 1305px;
     }
     .container-process{
-        background-color: yellow;
-        height: 50%;
-        display: flex;
+    background-color: transparent;
+    width: 1300px;
+    height: 450px;
+    display: flex;
+    margin-bottom: 10px;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: stretch;
 	align-content: stretch;
     }
+    
     .container-process-action{
-        background-color: red;
-        width: 70%;    
+        background-color:  #e4e3e3;
+        border-radius: 10px;
+        border: solid transparent;
+        margin-right: 10px;
+        width: 70%;  
+        height: 98%;  
     }
     .container-process-clock{
-        background-color: brown;
+        background-color: #2d2b38;
         width:40%;
+        margin-left: 5px;
+        border-radius: 10px;
+        border: solid transparent;
     }
     .container-button{
-        background-color: yellow;
+        background-color: transparent;
         width: 100%;
         height: 10%;
     }
     .container-maquina-superior{
         width:100%;
         height: 60%;
-        background-color: yellowgreen;
+        background-color: transparent;
+        border: solid transparent;
         display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -107,9 +119,8 @@
 	align-content: stretch;
     }
     .container-maquina-inferior{
-        width: 100%;
+        width: 98%;
         height: 40%;
-        background-color: rosybrown;
         display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -120,19 +131,27 @@
     .contenedor{
         width: 5%;
         height: 100%;
-        background-color: blue;
-        margin-left: 0.5%;
+        background-color: transparent;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
     }
     .cinta{
-        width:33%;
-        height: 100%;
-        background-color: beige;
-        border: solid 2.5px black;
+        width:30%;
+        margin-top: 3.5px;
+        height: 90%;
+        margin-left: 8px;
+        background-color: transparent
     }
     .cinta-arriba{
         width: 100%;
         height: 50%;
-        background-color: #a1c4fd;
+        background-color: transparent;
         display: flex;
 	    flex-direction: row;
 	    flex-wrap: nowrap;
@@ -143,7 +162,7 @@
     .cinta-arriba-principal{
         width: 100%;
         height: 50%;
-        background-color: #a1c4fd;
+        background-color: transparent;
         display: flex;
 	    flex-direction: row;
 	    flex-wrap: nowrap;
@@ -154,7 +173,16 @@
     .cinta-abajo{
         width: 100%;
         height: 50%;
-        background-color: crimson;
+        border-radius: 30px;
+        border:solid transparent;
+        background-color:  #46aca5;
+
+        display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
     }
     .yogurt{
         width:45%;
@@ -169,7 +197,274 @@
 
 
 
+    .container-prueba{
+        width: 740px;
+        height: 500px;
+        background-color: blue;
+    }
 
+    .contenedor-1{
+        width: 100%;
+        height: 20px;
+        background-color: #e4e3e3;
+        border: solid #46aca5 3px;
+    }
+    .contenedor-2-1{
+        width: 80%;
+        height: 35px;
+        background-color: red;
+    }
+    .contenedor-2-2{
+        width: 80%;
+        height: 35px;
+        background-color: #a1c4fd;
+    }
+    .container-fases{
+        width: 100%;
+        height: 20%;
+        margin-top:5%;
+        display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+    }
+    
+    .fase-1{
+        width: 20%;
+        height: 100%;
+        border-radius: 10px;
+        border: solid transparent;
+        background-color: #46aca5;
+        color: #2d2b38;
+
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: stretch;
+    }
+
+    .fase-2{
+        width: 45%;
+        height: 30%;
+        border-radius: 10px;
+        border: solid transparent;
+        background-color: red;
+        color: white;
+
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: stretch;
+    }
+
+    .fase-2-0{
+        width: 45%;
+        height: 30%;
+        border-radius: 10px;
+        border: solid #46aca5 1.5px;
+        background-color: #2d2b38;
+        color: #46aca5;
+
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: stretch;
+    }
+
+    .fase-0{
+        width: 20%;
+        height: 100%;
+        border-radius: 10px;
+        border: solid #46aca5 1.5px;
+        background-color: #2d2b38;
+        color: #46aca5;
+
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: stretch;
+    }
+
+    .fase-melao-1{
+        width: 20%;
+        height: 100%;
+        border-radius: 10px;
+        border: solid transparent;
+        background-color: red;
+        color: white;
+
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: stretch;
+    }
+
+    .fase-yogurt-1{
+        width: 20%;
+        height: 100%;
+        border-radius: 10px;
+        border: solid transparent;
+        background-color: blueviolet;
+        color: white;
+
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: center;
+	    align-content: stretch;
+    }
+    
+
+    .container-pisos{
+        width: 100%;
+        height: 30%;
+        background-color: transparent;
+        display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    }
+
+    .piso-yogurt{
+        width:20%;
+        height:20%;
+        background-color: blueviolet;
+    }
+    .piso-melao{
+        width: 20%;
+        height: 20%;
+        background-color: red;
+    }
+    .piso-0{
+        width:20%;
+        height:20%;
+        border: solid #46aca5 1.5px;
+    }
+   
+ 
+
+.spinner-1 {
+    width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  color:white;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  background-color: transparent;
+  border-top: 5px solid rgb(66,139,202);
+  border-right: 5px solid rgba(66,139,202,.2);
+  border-bottom: 5px solid rgba(66,139,202,.2);
+  border-left: 5px solid rgba(66,139,202,.2);
+}
+
+.spinner-2 {
+    width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  color:white;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  background-color: transparent;
+  border-top: 5px solid rgb(66,139,202);
+  border-right: 5px solid rgb(66,139,202);
+  border-bottom: 5px solid rgba(66,139,202,.2);
+  border-left: 5px solid rgba(66,139,202,.2);
+}
+
+.spinner-3 {
+    width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  color:white;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  background-color: transparent;
+  border-top: 5px solid rgb(66,139,202);
+  border-right: 5px solid rgb(66,139,202);
+  border-bottom: 5px solid rgb(66,139,202);
+  border-left: 5px solid rgba(66,139,202,.2);
+}
+
+.spinner-4 {
+    width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  color:white;
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+  background-color: transparent;
+  border-top: 5px solid rgb(66,139,202);
+  border-right: 5px solid rgb(66,139,202);
+  border-bottom: 5px solid rgb(66,139,202);
+  border-left: 5px solid rgb(66,139,202);
+}
+
+.container-reloj{
+    width: 100%;
+    height: 40%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+
+}
+.reloj-1{
+    margin: 5%;
+    color:white;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+.container-finalizado{
+
+    width: 100%;
+    margin-top:-10%;
+        height: 20%;
+        display: flex;
+	align-items: center;
+    justify-content: center;
+}
 
 </style>
 <body>
@@ -178,11 +473,28 @@
         <div class="container">
             <div class="container-process">
                 <div class="container-process-action">
-                    
+                                        
                     <div class="container-maquina-superior">
-                        <div class="contenedor"></div>
-                        <div class="contenedor"></div>
+                        <div class="contenedor">
+                            <div class="contenedor-1"></div>
+                            <div class="contenedor-2-1"></div>
+                            <div class="contenedor-1"></div>
+                            <div class="contenedor-2-1"></div>
+                            <div class="contenedor-1"></div>
+                            <div class="contenedor-2-1"></div>
+                            <div class="contenedor-1"></div>
+                        </div>
+                        <div class="contenedor">
+                            <div class="contenedor-1"></div>
+                            <div class="contenedor-2-2"></div>
+                            <div class="contenedor-1"></div>
+                            <div class="contenedor-2-2"></div>
+                            <div class="contenedor-1"></div>
+                            <div class="contenedor-2-2"></div>
+                            <div class="contenedor-1"></div>
+                        </div>
                     </div>
+                    
                     <div class="container-maquina-inferior">
                         <div class="cinta">
                             <div class="cinta-arriba">
@@ -193,21 +505,29 @@
                             <div class="cinta-abajo"></div>
                         </div>
                         <div class="cinta">
+                            
                             <div class="cinta-arriba-principal">
-                                <div class="container-tuberias">
-
-                                </div>
+                               
+                                <div class="container-tuberias"></div>
 
                                 <div class="desaparecido" id="tipo2"></div>
-                                </div>
-                            <div class="cinta-abajo"></div>
+                            
+                            </div>
+                            
+                            <div class="cinta-abajo">
+                                
+                        <div class="spinner-1" id="spinner-proceso">0g</div>
+                            </div>
+                        
                         </div>
                         <div class="cinta">
+
                             <div class="cinta-arriba">
                                 <marquee>
                                     <div class="desaparecido" id="tipo1"></div>
                                 </marquee>
                             </div>
+                            
                             <div class="cinta-abajo"></div>
                         </div>
                     </div>
@@ -217,22 +537,36 @@
 
 
                 <div class="container-process-clock">
-                    <div class="clock">
-                        <svg class="circle" viewBox="0 0 120 120" version="1.1"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="60" cy="60" r="60" class="outer-circle"/>
-                        <circle cx="60" cy="60" r="57" />
-                        <line x1="10" y1="60" x2="60" y2="60" class="hours" />
-                        <line x1="60" y1="25" x2="60" y2="60" class="hours" />
-                        </svg>
-                      </div>
+                    
+                    <div class="container-fases">
+                        <div class="fase-0" id="fase-1">Fase 1</div>
+                        <div class="fase-0" id="fase-2">Fase 2</div>
+                        <div class="fase-0" id="fase-3">Fase 3</div>
+                    </div>
+                    <div class="container-fases">
+                        <div class="fase-0" id="fase-melao">Melao</div>
+                        <div class="fase-0" id="fase-yogurt">Yogurt</div>
+                    </div>
+                    <div class="container-reloj">
+                        <div class="reloj-1">L2</div>
+                        <div class="spinner-1" id="spinner">0 g</div>
+                        <div class="reloj-1">L1</div>
+                    </div>
+                    <div class="container-finalizado">
+                        <div class="fase-2-0" id="aviso">¡Proceso terminado!</div>
+
+                    </div>
+                    
                 </div>
+
+
             </div>
             <div class="container-button">
                 <button id="boton">Start</button>
             </div>
         </div>
         
+     
     </div>
 </body>
 <script src="planta.js"></script>
